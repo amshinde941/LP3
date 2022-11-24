@@ -39,8 +39,8 @@ contract MarksManagmtSys {
         stdCount = stdCount + 1;
 
         // Fetch the student details
-        // with the help of stdCount
-        stdRecords[stdCount] = Student(_ID, _fName, _lName, _marks);
+        // with the help of _ID
+        stdRecords[_ID] = Student(_ID, _fName, _lName, _marks);
     }
 
     // fallback function
