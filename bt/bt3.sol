@@ -35,12 +35,12 @@ contract MarksManagmtSys {
         string memory _lName,
         int256 _marks
     ) public onlyOwner {
-        // Increase the count by 1
+        // Increase the count by 1 
         stdCount = stdCount + 1;
 
         // Fetch the student details
         // with the help of _ID
-        stdRecords[_ID] = Student(_ID, _fName, _lName, _marks);
+        stdRecords[stdCount] = Student(_ID, _fName, _lName, _marks);
     }
 
     // fallback function
